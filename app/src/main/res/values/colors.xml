@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="green">#FFA0FF1F</color>
+	<color name="green_2">#FF00ED71</color>
+	<color name="pink">#FFF70087</color>
+	<color name="pink2">#FFF40256</color>
+	<color name="grey_dark">#FF5B5B5B</color>
+	<color name="grey_mild">#FFC3C3C3</color>
+	<color name="grey_light">#FFF8F8F8</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="success_500">#FF00ED71</color>
+	<color name="success_400">#3300ED71</color>
+	<color name="error_500">#FFF40256</color>
+	<color name="error_400">#26F40256</color>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreateNominationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            style="@style/bold_headline_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/create_a_nomination"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop"
+                android:src="@drawable/artwork_create" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="50dp">
+
+                <TextView
+                    style="@style/bold_headline_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/id_like_to_nominate"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/id_like_to_nominate_subtitle"
+                    android:textColor="@color/black" />
+
+                <!-- TODO: Add the drop down selector of nominees -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/grey_mild" />
+
+
+                <TextView
+                    style="@style/bold_headline_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/cube_name"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_cube"
+                    android:background="@drawable/spinner_border"
+                    android:spinnerMode="dropdown"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/grey_mild" />
+
+                <TextView
+                    style="@style/bold_headline_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/reason_title"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/reason_subtitle"
+                    android:textColor="@color/black" />
+
+                <!-- TODO: Add the Edit text for the reason -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/grey_mild" />
+
+                <TextView
+                    style="@style/bold_headline_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/reasoning_title"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/bg_outline_black"
+                    android:inputType="text|textMultiLine"
+                    android:maxLength="280" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/grey_mild" />
+
+                <TextView
+                    style="@style/bold_headline_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/process_title"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/process_subtitle"
+                    android:textColor="@color/black" />
+
+                <!-- TODO: Add the Radio button for the feedback -->
+                <RadioGroup
+                    android:id="@+id/radio_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_very_unfair"
+                        style="@style/radio_bg"
+                        android:background="@drawable/bg_outline_black"
+                        android:text="@string/radio_very_unfair" />
+
+                    <RadioButton
+                        android:id="@+id/radio_unfair"
+                        style="@style/radio_bg"
+                        android:background="@drawable/bg_outline_black"
+                        android:text="@string/radio_unfair" />
+
+                    <RadioButton
+                        android:id="@+id/radio_fair"
+                        style="@style/radio_bg"
+                        android:background="@drawable/bg_outline_black"
+                        android:text="@string/radio_fair" />
+
+                    <RadioButton
+                        android:id="@+id/radio_not_sure"
+                        style="@style/radio_bg"
+                        android:background="@drawable/bg_outline_black"
+                        android:text="@string/radio_not_sure" />
+
+                    <RadioButton
+                        android:id="@+id/radio_very_fair"
+                        style="@style/radio_bg"
+                        android:background="@drawable/bg_outline_black"
+                        android:text="@string/radio_very_fair" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_button"
+            style="@style/button_outline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_weight="1"
+            android:text="@string/back" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_button"
+            style="@style/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_weight="2"
+            android:enabled="true"
+            android:text="@string/submit_nomination" />
+
+    </LinearLayout>
+</LinearLayout>

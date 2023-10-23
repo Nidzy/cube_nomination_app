@@ -1,0 +1,34 @@
+<resources>
+	<string name="app_name">CubeAcademy</string>
+	<string name="your_nominations_title">Your nominations</string>
+	<string name="empty_body">once you submit a nomination, you will be able to SEE it here.</string>
+	<string name="create_new_nomination">Create New Nomination</string>
+	<string name="create_a_nomination">Create a nomination</string>
+	<string name="submit_nomination">Submit Nomination</string>
+	<string name="back">Back</string>
+	<string name="id_like_to_nominate">I’d like to nominate...</string>
+	<string name="id_like_to_nominate_subtitle">Please select a cube who you feel has done something honourable this month or just all round has a great work ethic.</string>
+	<string name="reason_title">I’d like to nominate THIS CUBE BECAUSE...</string>
+	<string name="reason_subtitle">Please let us know why you think this cube deserves the ‘cube of the month’ title 🏆⭐</string>
+	<string name="process_title">IS HOW WE CURRENTLY RUN CUBE OF THE MONTH FAIR?</string>
+	<string name="process_subtitle">As you know, out the nominees chosen, we spin a wheel to pick the cube of the month. What’s your opinion on this method?</string>
+	<string name="nomination_submitted">Nomination Submitted</string>
+	<string name="back_to_home">Back to home</string>
+	<string name="nomination_submitted_body">Thank you for taking the time to fill out this form! Why not nominate another cube?</string>
+    <string name="reasoning_title">Reasoning</string>
+    <string name="cube_name">Cube\'s name</string>
+	<!--Radio button strings-->
+	<string name="radio_very_unfair">Very Unfair</string>
+	<string name="radio_unfair">Unfair</string>
+	<string name="radio_fair">Fair</string>
+	<string name="radio_not_sure">Not sure</string>
+	<string name="radio_very_fair">Very Fair</string>
+	<!--bottom sheet strings-->
+	<string name="are_you_sure">"Are You Sure?"</string>
+	<string name="loose_progress">"If you leave this pacge you will loose any progress made"</string>
+	<string name="yes_leave">"Yes, leave page"</string>
+	<string name="cancel">"Cancel"</string>
+	<string name="error_in_creating_nomination">Error in Creating Nomination</string>
+	<string name="error_connect_internet">Please Connect to internet</string>
+
+</resources>
