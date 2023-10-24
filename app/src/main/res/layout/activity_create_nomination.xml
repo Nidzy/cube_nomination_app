@@ -79,13 +79,18 @@
                     android:text="@string/cube_name"
                     android:textColor="@color/black" />
 
-                <Spinner
-                    android:id="@+id/spinner_cube"
-                    android:background="@drawable/spinner_border"
-                    android:spinnerMode="dropdown"
-                    android:padding="8dp"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="@drawable/spinner_border">
+                    <Spinner
+                        android:id="@+id/spinner_cube"
+                        android:spinnerMode="dropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
 
                 <View
                     android:layout_width="match_parent"
